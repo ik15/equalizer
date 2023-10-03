@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/* Mobile First Web */
+/* MS - Mobile Screen */
+/* TS - Tablet Screen */
+
+/* Background Colors */
+.bg-blue {
+  background-color: #66E2DC;
+}
+
+.bg-white {
+  background-color: #FCFAF9;
+}
+
+.bg-orange {
+  background-color: #FA7453;
+}
+
+.bg-yellow {
+  background-color: #FFB964;
+}
+
+.bg-black {
+  background-color: #191826;
+}
+
+
+/* Text Colors */
+.txt-white {
+  color: #FCFAF9;
+}
+
+/* Section Header MS */
+.section_header {
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header_background-mobile-img {
+  position: absolute;
+  top: -58%;
+}
+
+.header_img {
+  margin: 40px 0 65px 25px;
+}
+
+.header_background-tablet-img {
+  display: none;
+}
+
+.header_content {
+  margin: 0 25px;
+}
+
+.header_header {
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.header_par {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Section Photos MS */
+.section_photos {
+  border-radius: 12px;
+  position: relative;
+}
+
+.section_photos-img {
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.background {
+  width: 100%;
+  height: 415px;
+  display: block;
+  position: absolute;
+  top: 25%;
+  z-index: -1;
+  border-radius: 12px;
+}
+
+.background_photo {
+  display: block;
+  margin: auto;
+}
+
+/* Section Premium MS */
+.section_premium {
+  border-radius: 12px;
+  height: 450px;
+  padding: 50px 35px;
+  width: 251px;
+  margin: auto;
+  margin-bottom: 65px;
+}
+
+.section_premium-header {
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 12px;
+}
+
+.section_premium-par {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+.section_premium-par-two {
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.section_premium-span {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  margin-left: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.ios_btn {
+  margin-bottom: 16px;
+}
+
+.btn_link {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'IBM Plex Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+
+.android_btn {
+  color: black;
+}
+
+/* Section Footer MS */
+.section_footer {
+  margin: 0 25px 65px 25px;
+}
+
+.footer_img {
+  margin-bottom: 32px;
+}
+
+.footer_par {
+  margin-bottom: 65px;
+  width: 65%;
+}
+
+.socials_link {
+  margin-right: 20px;
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 481px) {
+  /* Section Header TS */
+  
+  .header_background-tablet-img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+  }
+
+  .header_content {
+    width: 55%;
+  }
+
+  /* Section Photos/Premium TS */
+  .section_photos-img {
+    margin: 10%;
+  }
+
+  /* Section Footer TS */
+  .section_footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer_par {
+    margin: 0;
+    width: 53%;
+  }
+}    
+
+/* Desktop Screen */
+@media screen and (min-width: 769px) {
+  /* Section Header DS */
+  .section_header {
+    overflow: inherit;
+  }
+
+  /* Section Premium DS */
+  .section_premium {
+    margin-left: 36%;
+    margin-top: -30%;
+  }
+
+  .ios_btn:hover {
+    background-color: #66E2DC;
+  }
+
+  .android_btn:hover {
+    background-color: #FFB964;
+  }
+
+  /* Section Footer DS */
+  .section_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer_img {
+    margin: 0 50px 32px 0;
+  }
+
+  .footer_par {
+    width: 40%;
+  }
+}
+
